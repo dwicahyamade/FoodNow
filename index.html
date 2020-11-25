@@ -14,13 +14,21 @@
     <!-- Navbar -->
     <header>
       <img class="logo" src="assets/img/logo-main.svg" height="50px" width="150px" alt="logo">
-      <ul class="nav-links">
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#">About</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">How it Works</a></li>
+        <a class="cta" href="#"><button>Download</button></a>
+        <!-- Navbar TOgle -->
+        <!-- End Navbar TOgle -->
       </ul>
-      <a class="cta" href="#"><button>Download</button></a>
     </header>
+
     <!-- End Navbar -->
     <div class="hero-text">
       <p>We make ordering food simple,
@@ -102,7 +110,7 @@
           <div class="how-description">
             <table>
               <tr>
-                <td class="number-circle">
+                <td class="number-circle-active">
                   <p>1</p>
                 </td>
                 <td class="number-text">Select a restaurant or type of food from the
@@ -262,5 +270,6 @@
   </section>
   <!-- End Footer -->
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>
