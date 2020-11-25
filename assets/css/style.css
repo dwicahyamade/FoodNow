@@ -173,7 +173,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   .hero{
     height: 800px;
     position: relative;
@@ -256,7 +256,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #About {
     background-image: none;
     height: auto;
@@ -352,7 +352,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #Features{
     position: relative;
     width: 100%;
@@ -502,7 +502,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #How {
     height: 1100px;
   }
@@ -590,7 +590,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #Download{
     margin: 0;
   }
@@ -624,6 +624,11 @@ header button:hover{
   #Download .download-text p{
     font-size: 20px;
     line-height: 30px;
+  }
+
+  #Download .download-text .row{
+    width: 60%;
+    margin: 70px auto;
   }
 }
 /* End Download */
@@ -661,7 +666,7 @@ header button:hover{
 
 /* Responsive Breakpoint */
 /* Mobile View */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #Partners .section-title h1{
     font-size: 40px;
   }
