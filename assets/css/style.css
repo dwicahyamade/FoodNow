@@ -20,6 +20,16 @@ html{
   font-weight: 600;
 }
 
+.sticky {
+  z-index: 1;
+  background-color: rgba(231, 126, 35, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 10%;
+  height: 80px;
+}
+
 header{
   display: flex;
   flex-wrap: wrap;
@@ -82,10 +92,11 @@ header button:hover{
   background-color: white;
   border-radius: 3px;
 }
-
 /* End Menu Toggle */
+
 /* Responsive Breakpoint */
-@media (max-width: 576px){
+/* Mobile View */
+@media (max-width: 1024px){
   .menu-toggle{
     display: flex;
     flex-direction: column;
@@ -102,7 +113,17 @@ header button:hover{
     align-items: center;
     background-color: #E77E23;
     border-radius: 10px;
-    box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.33);;
+    box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.33);
+  }
+
+  .nav-links li a:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
   }
 
   .nav-links li, a, button{
@@ -112,6 +133,8 @@ header button:hover{
 
   .nav-links.show{
     display: flex;
+    z-index: 2;
+    margin-top: 5px;
   }
 }
 /* End Navbar */
@@ -149,6 +172,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   .hero{
     height: 800px;
@@ -231,6 +255,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   #About {
     background-image: none;
@@ -262,7 +287,6 @@ header button:hover{
   #About .about-text p{
     font-size: 20px;
   }
-
 }
 /* End About */
 
@@ -327,6 +351,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   #Features{
     position: relative;
@@ -476,6 +501,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   #How {
     height: 1100px;
@@ -563,6 +589,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   #Download{
     margin: 0;
@@ -633,6 +660,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
+/* Mobile View */
 @media (max-width: 576px){
   #Partners .section-title h1{
     font-size: 40px;
@@ -673,7 +701,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #Coverage{
     height: auto;
     padding-bottom: 60px;
@@ -717,7 +745,7 @@ header button:hover{
 }
 
 /* Responsive Breakpoint */
-@media (max-width: 576px){
+@media (max-width: 1024px){
   #Footer{
     height: 300px;
   }
