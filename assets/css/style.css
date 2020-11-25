@@ -22,7 +22,7 @@ html{
 
 .sticky {
   z-index: 1;
-  background-color: rgba(231, 126, 35, 0.7);
+  background-color: rgba(231, 127, 35, 0.8);
   position: fixed;
   top: 0;
   width: 100%;
@@ -116,7 +116,7 @@ header button:hover{
     box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.33);
   }
 
-  .nav-links li a:hover::after{
+  .nav-links li a:hover{
     content: '';
     display: block;
     border-bottom: 3px solid #ffffff;

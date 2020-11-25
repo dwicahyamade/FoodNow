@@ -18,3 +18,15 @@ window.onscroll = function () {
     navbar.classList.remove("sticky");
   }
 };
+
+// Jquery for scroling
+$('.page-scroll').on('click', function (e) {
+  var destination = $(this).attr('href');
+  var elDestination = $(destination);
+
+  $('html').animate({
+    scrollTop: elDestination.offset().top - 80
+  }, 800);
+
+  e.preventDefault();
+})
