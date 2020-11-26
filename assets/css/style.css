@@ -11,6 +11,32 @@ html{
   overflow-x: hidden;
 }
 
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+}
+
+.back-to-top b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background:  #E77E23;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top b:hover {
+  background: #ffb06c;
+  color: #fff;
+}
+
 /* Start Navbar */
 .nav-links li, a, button{
   font-family: "Montserrat", sans-serif;
@@ -105,6 +131,10 @@ header button:hover{
     cursor: pointer;
   }
 
+  .menu-toggle.click{
+    box-shadow: 0px 0px 5px #424242
+  }
+
   .nav-links{
     z-index: 1;
     display: none;
@@ -147,9 +177,11 @@ header button:hover{
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-text{
+  opacity: 0;
   font-weight: 600;
   font-size: 2vmax;
   font-family: "Montserrat", sans-serif;
@@ -171,12 +203,19 @@ header button:hover{
   margin-top: 50px;
 }
 
+#Hero .hero-text.show{
+  opacity: 1;
+  transform: translate(-50%, -40%);
+  transition: 1s;
+}
+
 /* Responsive Breakpoint */
 /* Mobile View */
 @media (max-width: 1024px){
-  .hero{
+  #Hero{
     height: 800px;
     position: relative;
+    background-attachment: scroll;
   }
 
   .hero-text{
@@ -200,7 +239,6 @@ header button:hover{
 /* Start About */
 #About{
   width: 100%;
-  height: 60vmax;
   margin: 100px 0;
   background-image: url(../img/bg-title-.svg);
   background-repeat: no-repeat;
@@ -215,16 +253,28 @@ header button:hover{
   align-items: center;
 }
 
-/* #About .about-img{
-  width: 100%;
-}
-#About .about-img img{
-  width: 100%;
-} */
-
 #About .about-text{
+  opacity: 0;
   margin-left: 100px;
   margin-top: 250px;
+  transform: translate(50px, 0);
+  transition: 1s;
+}
+
+#About .about-text.show{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+#About .about-img-content{
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+#About .about-img-content.show{
+  opacity: 1;
+  transform: translate(0,0);
 }
 
 #About .about-text h1{
@@ -321,6 +371,9 @@ header button:hover{
 }
 
 #Features .container div{
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: 0.5s;
   width: 500px;
   height: 500px;
   font-family: "Montserrat", sans-serif;
@@ -328,6 +381,11 @@ header button:hover{
   line-height: 40px;
   margin: 60px 0px;
   font-size: 20px;
+}
+
+#Features .container div.show{
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 #Features .container h3{
@@ -424,10 +482,18 @@ header button:hover{
 }
 
 #How .how-text{
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
   font-family: "Pacifico", sans-serif;
   font-size: 55px;
   text-align: left;
   margin-top: 190px;
+}
+
+#How .how-text.show{
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 #How .how-text h1{
