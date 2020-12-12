@@ -1,0 +1,43 @@
+Design View
+1. Fixed
+2. Fixed
+3. Fixed
+4. Fixed
+5. Fixed
+
+Coding View
+1. Fixed
+Solusi : Mengganti tag section dengan ID
+
+2. Fixed
+
+3. Fixed
+Solusi : Menambahkan hover di tombol Lets Get Started
+
+4. Fixed
+Solusi : Membuat class Button
+
+5. Fixed
+
+6. Fixed
+
+7. Fixed
+
+8. Fixed
+
+9. Fixed
+
+10. Fixed
+
+11. Fixed
+
+12. Fixed
+
+13. Sudah dicoba menggunakan margin-top : -x tapi tidak bisa keatas. hint ?
+
+14. Sudah dicoba menggunakan flex-end tapi masih menyisakan ruang dibagian bawah.
+Solusi : menggunakan absolute dan mengatur top, right
+
+15. Fixed
+
+16. Fixed
