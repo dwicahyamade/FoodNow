@@ -12,57 +12,57 @@
 
 <body>
   <!-- Start Hero -->
-  <section id="Hero">
+  <div id="Hero">
     <!-- Navbar -->
     <header id="header">
-      <img class="logo" src="assets/img/logo-main.svg" height="50px" width="150px" alt="logo">
+      <div class="logo">
+        <a href="http://"><img src="assets/img/logo-main.svg" height="50px" width="150px" alt="logo"></a>
+      </div>
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#About" class="page-scroll">About</a></li>
-        <li><a href="#Features" class="page-scroll">Features</a></li>
-        <li><a href="#How" class="page-scroll">How it Works</a></li>
+        <li><a href="#About" class="page-scroll nav-buttons">About</a></li>
+        <li><a href="#Features" class="page-scroll nav-buttons">Features</a></li>
+        <li><a href="#How" class="page-scroll nav-buttons">How it Works</a></li>
         <li><a href="#Download" class="page-scroll"><button>Download</button></a></li>
         <!-- Navbar TOgle -->
         <!-- End Navbar TOgle -->
       </ul>
     </header>
-
     <!-- End Navbar -->
+
     <div class="hero-text">
       <p>We make ordering food simple,
         <br>
         fun, and accessible via desktop or <br>
         mobile devices
       </p>
-      <a href="#"><button>Let's Get Started</button></a>
+      <a href="#About" class="page-scroll"><button>Let's Get Started</button></a>
     </div>
-  </section>
+  </div>
   <!-- End Hero -->
   <!-- Start Abput -->
   <section id="About">
-    <div class="about-box">
-    </div>
     <div class="container">
       <div class="about-img">
         <img class="about-img-content" src="assets/img/img-about.jpg" alt="">
       </div>
       <div class="about-text">
-        <h1>About <span class="right-text">Foodnow</span></h1>
-        <br><br>
+        <h1 class="title">About <span class="right-text">Foodnow</span></h1>
         <p>FoodNow is an online ordering and food delivery
           service located in 20 cities across Indonesia. We
           make ordering simple, fun, accessible
-          via desktop or mobile devices.
-          <br><br>
+          via desktop or mobile devices.</p>
+        <p>
           Our focus goes beyond food, partnering with
           local bussiness, school, groups, and restaurant,
           nringing ouw customers the best experience
           possible.
-          <br><br>
+        </p>
+        <p>
           With FoodNow, you can save time, avoid stressfull
           trafic and inclement weather, all while ordering
           from the comfort of your home or bussiness. Now,
@@ -78,22 +78,22 @@
       <h1>Our <span class="right-text">Features</span></h1>
     </div>
     <div class="container">
-      <div class="box-1">
-        <img src="/assets/img/ico-feat-1.svg" alt="">
+      <div class="box">
+        <img src="assets/img/ico-feat-1.svg" alt="">
         <h3>
           Eat from the best restaurants
         </h3>
         <p>Access all the best restaurants around you and enjoy their cuisine at home</p>
       </div>
-      <div class="box-2">
-        <img src="/assets/img/ico-feat-2.svg" alt="">
+      <div class="box middle">
+        <img src="assets/img/ico-feat-2.svg" alt="">
         <h3>
           Choose the food you love
         </h3>
         <p>Our delivery service offers you a wide range of fresh meals prepared at the moment</p>
       </div>
-      <div class="box-3">
-        <img src="/assets/img/ico-feat-3.svg" alt="">
+      <div class="box">
+        <img src="assets/img/ico-feat-3.svg" alt="">
         <h3>
           Sit back, dinner is on the way
         </h3>
@@ -113,7 +113,7 @@
             <table>
               <tr>
                 <td class="number-circle-active">
-                  <p>1</p>
+                  <div class="number">1</div>
                 </td>
                 <td class="number-text">Select a restaurant or type of food from the
                   available categories and recommendation that
@@ -125,7 +125,7 @@
             <table>
               <tr>
                 <td class="number-circle">
-                  <p>2</p>
+                  <div class="number">2</div>
                 </td>
                 <td class="number-text">Or enter the name of a restaurant or
                   type of food you would like.
@@ -137,7 +137,7 @@
             <table>
               <tr>
                 <td class="number-circle">
-                  <p>3</p>
+                  <div class="number">3</div>
                 </td>
                 <td class="number-text">Select the type and quantity of
                   dish(es) you would like to order.
@@ -149,7 +149,7 @@
             <table>
               <tr>
                 <td class="number-circle">
-                  <p>4</p>
+                  <div class="number">4</div>
                 </td>
                 <td class="number-text">Enter the delivery address and select the
                   payment method, then click on Order.
@@ -161,7 +161,7 @@
             <table>
               <tr>
                 <td class="number-circle">
-                  <p>5</p>
+                  <div class="number">5</div>
                 </td>
                 <td class="number-text">Your order is on it's way!.
                 </td>
@@ -170,7 +170,7 @@
           </div>
         </div>
         <div class="how-img">
-          <img src="assets/img/img-how-it-works.png" alt="">
+          <img class="how-img-content" src="assets/img/img-how-it-works.png" alt="">
         </div>
       </div>
     </div>
@@ -180,7 +180,7 @@
   <section id="Download">
     <div class="container">
       <div class="download-img">
-        <img src="assets/img/img-download.png" alt="">
+        <img class="download-img-content" src="assets/img/img-download.png" alt="">
       </div>
       <div class="download-text">
         <span>Download FoodNow</span>
@@ -206,9 +206,8 @@
         Chatime | Starbucks | Mie Setan Renon | Waroeng Steak and Shake | Kedai 99 | C'Bezt Fried Chicken | JFC
         Mie Kober | Mie Gacoan | Hotdoh Pisang Goreng | Babi Guling Candra | Be Genyol Bu Agus | Kopi Kulo
         Janji Jiwa | Ngocok Es Kopi | Twissterdog | KFC | MCD | Burger King | Geprek Bensu | Chatime
-        <br><br>
-        <b>And many more...</b>
       </div>
+      <div class="bottom-text">And many more...</div>
     </div>
   </section>
   <!-- End Start Partner -->
